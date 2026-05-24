@@ -1,4 +1,3 @@
-// Parte explicativa
 let etapaAtual = 1;
 const totalEtapas = 5;
 
@@ -14,7 +13,6 @@ function avancarEtapa() {
   }
 }
 
-// Parte prática
 let residuos = 0;
 let biogas = 0;
 let energia = 0;
@@ -28,7 +26,7 @@ function coletarResiduos() {
 function fermentar() {
   if (residuos > 0) {
     residuos -= 1;
-    biogas += 1; // cada resíduo vira 1 unidade de biogás
+    biogas += 1;
     document.getElementById("residuos").innerText = "Resíduos: " + residuos;
     document.getElementById("biogas").innerText = "Biogás: " + biogas;
     alert("Resíduo fermentado → biogás produzido!");
@@ -40,7 +38,7 @@ function fermentar() {
 function gerarEnergia() {
   if (biogas > 0) {
     biogas -= 1;
-    energia += 10; // cada biogás gera 10 unidades de energia
+    energia += 10; 
     document.getElementById("biogas").innerText = "Biogás: " + biogas;
     document.getElementById("energia").innerText = "Energia: " + energia;
     alert("Biogás transformado em energia limpa!");
