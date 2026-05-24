@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biogás Sustentável</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Biogás de Resíduos Orgânicos</h1>
+    <p>Transformando lixo em energia para ajudar na plantação</p>
+  </header>
+
+  <main>
+    <!-- Parte explicativa -->
+    <section id="processo">
+      <h2>Processo Passo a Passo</h2>
+      <button onclick="avancarEtapa()">Avançar Etapa</button>
+      
+      <div id="etapas">
+        <div id="etapa1" class="etapa">
+          <h3>1. Resíduos Orgânicos</h3>
+          <img src="residuo.png" alt="Resíduo orgânico" class="icon">
+          <p>Os restos de comida e esterco são coletados.</p>
+        </div>
+
+        <div id="etapa2" class="etapa hidden">
+          <h3>2. Biodigestor</h3>
+          <img src="biodigestor.jpg" alt="Biodigestor" class="icon">
+          <p>Os resíduos entram no biodigestor e começam a fermentar.</p>
+        </div>
+
+        <div id="etapa3" class="etapa hidden">
+          <h3>3. Biogás</h3>
+          <img src="biogas.jpg" alt="Biogás" class="icon">
+          <p>O processo gera biogás, que pode ser usado como energia.</p>
+        </div>
+
+        <div id="etapa4" class="etapa hidden">
+          <h3>4. Energia Limpa</h3>
+          <img src="energia.jpg" alt="Energia" class="icon">
+          <p>A energia é usada para irrigar e cuidar da plantação.</p>
+        </div>
+
+        <div id="etapa5" class="etapa hidden">
+          <h3>5. Plantação Sustentável</h3>
+          <img src="plantinha.jpg" alt="Plantinha" class="icon">
+          <p>Com energia e adubo natural, a plantação cresce saudável!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Parte prática -->
+   <section id="pratica">
+  <h2>Parte Prática</h2>
+  <button onclick="coletarResiduos()">Adicionar Resíduo</button>
+  <button onclick="fermentar()">Fermentar</button>
+  <button onclick="gerarEnergia()">Gerar Energia</button>
+  <button onclick="irrigar()">Irrigar Plantação</button>
+
+  <p id="residuos">Resíduos: 0</p>
+  <p id="biogas">Biogás: 0</p>
+  <p id="energia">Energia: 0</p>
+  <p id="plantas">Plantas saudáveis: 0</p>
+</section>
+  </main>
+
+  <footer>
+    <p>Projeto Agrinho 2026 - Agro forte, futuro sustentável</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
